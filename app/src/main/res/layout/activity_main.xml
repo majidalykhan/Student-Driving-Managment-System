@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/settingBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/settingBtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436"
+        app:layout_constraintVertical_bias="0.47"
         app:srcCompat="@drawable/ic_expense"
         tools:ignore="VectorDrawableCompat" />
 
@@ -27,11 +27,11 @@
         android:layout_height="wrap_content"
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/expenseBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/expenseBtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146"
+        app:layout_constraintVertical_bias="0.161"
         app:srcCompat="@drawable/ic_registration"
         tools:ignore="VectorDrawableCompat" />
 
@@ -40,11 +40,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/regBtn"
+        app:layout_constraintEnd_toEndOf="@+id/calendarBtn"
         app:layout_constraintHorizontal_bias="0.816"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/calendarBtn"
+        app:layout_constraintTop_toTopOf="@+id/regBtn"
         app:layout_constraintVertical_bias="0.146"
         app:srcCompat="@drawable/ic_student"
         tools:ignore="VectorDrawableCompat" />
@@ -56,10 +56,10 @@
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintVertical_bias="0.791"
         app:srcCompat="@drawable/ic_setting"
         tools:ignore="VectorDrawableCompat" />
 
@@ -70,10 +70,10 @@
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintHorizontal_bias="0.819"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintVertical_bias="0.791"
         app:srcCompat="@drawable/ic_report"
         tools:ignore="VectorDrawableCompat" />
 
@@ -82,11 +82,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/expenseBtn"
+        app:layout_constraintEnd_toEndOf="@+id/reportBtn"
         app:layout_constraintHorizontal_bias="0.819"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/reportBtn"
+        app:layout_constraintTop_toTopOf="@+id/expenseBtn"
         app:layout_constraintVertical_bias="0.437"
         app:srcCompat="@drawable/ic_calendar"
         tools:ignore="VectorDrawableCompat" />
@@ -100,10 +100,10 @@
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/regBtn"
         app:layout_constraintEnd_toEndOf="@+id/regBtn"
-        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="@+id/regBtn"
         app:layout_constraintTop_toTopOf="@+id/regBtn"
-        app:layout_constraintVertical_bias="0.87" />
+        app:layout_constraintVertical_bias="0.835" />
 
     <TextView
         android:id="@+id/studentText"
@@ -117,7 +117,7 @@
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="@+id/studentBtn"
         app:layout_constraintTop_toTopOf="@+id/studentBtn"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintVertical_bias="0.940" />
 
     <TextView
         android:id="@+id/expenseText"
@@ -145,7 +145,7 @@
         app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="@+id/calendarBtn"
         app:layout_constraintTop_toTopOf="@+id/calendarBtn"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintVertical_bias="0.920" />
 
     <TextView
         android:id="@+id/settingText"
@@ -156,10 +156,10 @@
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/settingBtn"
         app:layout_constraintEnd_toEndOf="@+id/settingBtn"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="0.480"
         app:layout_constraintStart_toStartOf="@+id/settingBtn"
         app:layout_constraintTop_toTopOf="@+id/settingBtn"
-        app:layout_constraintVertical_bias="0.87" />
+        app:layout_constraintVertical_bias="0.92" />
 
     <TextView
         android:id="@+id/reportText"
@@ -167,10 +167,10 @@
         android:layout_height="wrap_content"
         android:text="Report"
         android:textColor="#000"
-        android:textSize="18dp"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/reportBtn"
         app:layout_constraintEnd_toEndOf="@+id/reportBtn"
-        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintHorizontal_bias="0.540"
         app:layout_constraintStart_toStartOf="@+id/reportBtn"
         app:layout_constraintTop_toTopOf="@+id/reportBtn"
         app:layout_constraintVertical_bias="0.86" />
