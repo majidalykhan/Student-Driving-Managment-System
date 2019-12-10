@@ -9,9 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".Student">
-=======
         <activity android:name=".StudentReport"
             android:label="Student Report"></activity>
         <activity
@@ -20,7 +17,6 @@
         <activity
             android:name=".MainActivity"
             android:label="Dashboard">
->>>>>>> 8e85dd0e356571640d84153cb24d863a2bc0a6d4
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
