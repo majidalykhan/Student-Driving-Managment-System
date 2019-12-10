@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
 
-    ImageButton calendar;
+    ImageButton calendar, registration;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent a = new Intent(MainActivity.this, BookLession.class);
+                startActivity(a);
+            }
+        });
+
+        registration = findViewById(R.id.regBtn);
+        registration.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(MainActivity.this, Registration.class);
                 startActivity(a);
             }
         });
