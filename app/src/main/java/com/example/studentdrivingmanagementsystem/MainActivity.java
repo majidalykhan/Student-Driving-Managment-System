@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 public class MainActivity extends AppCompatActivity {
 
 
-    ImageButton calendar, registration;
+    ImageButton calendar, registration, expense, setting, report, student;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         calendar = findViewById(R.id.calendarBtn);
+        registration = findViewById(R.id.regBtn);
+        expense = findViewById(R.id.expenseBtn);
+        setting = findViewById(R.id.settingBtn);
+        report = findViewById(R.id.reportBtn);
+        student = findViewById(R.id.studentBtn);
 
 
         calendar.setOnClickListener(new View.OnClickListener() {
@@ -29,11 +34,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        registration = findViewById(R.id.regBtn);
+
         registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent a = new Intent(MainActivity.this, Registration.class);
+                startActivity(a);
+            }
+        });
+
+        expense.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(MainActivity.this, NewExpenses.class);
+                startActivity(a);
+            }
+        });
+
+        report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(MainActivity.this, Progress.class);
+                startActivity(a);
+            }
+        });
+
+        student.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(MainActivity.this, StudentReport.class);
                 startActivity(a);
             }
         });
