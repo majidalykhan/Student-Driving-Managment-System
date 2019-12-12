@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         calendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(MainActivity.this, BookLession.class);
+                Intent a = new Intent(MainActivity.this, calendar.class);
                 startActivity(a);
             }
         });
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         expense.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(MainActivity.this, NewExpenses.class);
+                Intent a = new Intent(MainActivity.this, Expenses.class);
                 startActivity(a);
             }
         });
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         report.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(MainActivity.this, Progress.class);
+                Intent a = new Intent(MainActivity.this, StudentReport.class);
                 startActivity(a);
             }
         });
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         student.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(MainActivity.this, StudentReport.class);
+                Intent a = new Intent(MainActivity.this, student.class);
                 startActivity(a);
             }
         });
