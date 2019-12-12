@@ -9,12 +9,14 @@
 
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="601dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,13 +27,12 @@
                 android:id="@+id/studentNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
                 android:background="@null"
                 android:hint="Student No."
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="40dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/line1"
@@ -46,13 +47,12 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Name"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/line2"
@@ -66,13 +66,12 @@
                 android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Address"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/line3"
@@ -86,13 +85,12 @@
                 android:id="@+id/postalCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Postal Code"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/line4"
@@ -106,13 +104,12 @@
                 android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Email"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/line5"
@@ -126,13 +123,12 @@
                 android:id="@+id/mobileNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Mobile No."
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/line6"
@@ -146,34 +142,32 @@
                 android:id="@+id/provisionalDrivingLicenseChkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Provisional Driving License"
                 android:layoutDirection="rtl"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <EditText
                 android:id="@+id/provisionalDrivingLicenseUpload"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Provisional Driving License"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@null"
-                android:layout_marginTop="-27dp"
                 android:layout_marginLeft="248dp"
+                android:layout_marginTop="-27dp"
+                android:background="@null"
                 app:srcCompat="@drawable/ic_upload"
                 tools:ignore="VectorDrawableCompat" />
 
@@ -181,16 +175,15 @@
                 android:id="@+id/drivingLicenseNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Driving License No."
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
-                android:id="@+id/line7"
+                android:id="@+id/line15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -201,52 +194,56 @@
                 android:id="@+id/theoryTestPassedChkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Theory Test Passed"
                 android:layoutDirection="rtl"
                 android:textColor="#000"
-                android:textSize="18dp"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/line7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                app:srcCompat="@drawable/ic_edittextline"
+                tools:ignore="VectorDrawableCompat" />
 
             <CheckBox
                 android:id="@+id/previousDrivingChkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Previous Driving Experience"
                 android:layoutDirection="rtl"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <CheckBox
                 android:id="@+id/eyesightChkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Eyesight Checked"
                 android:layoutDirection="rtl"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <EditText
                 android:id="@+id/medicalCondition"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Medical Condition"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/line8"
@@ -260,13 +257,12 @@
                 android:id="@+id/reference"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="How did you get our reference?"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/line9"
@@ -280,13 +276,12 @@
                 android:id="@+id/signature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Signature"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/line10"
@@ -301,13 +296,12 @@
                 android:id="@+id/note"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
                 android:background="@null"
                 android:hint="Note"
                 android:textColor="#000"
-                android:textSize="18dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
-                />
+                android:textSize="18dp" />
 
             <ImageView
                 android:id="@+id/line11"
@@ -318,24 +312,38 @@
                 tools:ignore="VectorDrawableCompat" />
 
             <ImageButton
-                android:id="@+id/dateBtn"
+                android:id="@+id/submitRegBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:layout_marginTop="-770dp"
-                android:layout_marginLeft="320dp"
-                app:srcCompat="@drawable/ic_dateicon"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/ic_button"
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/changeDetailsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Date"
-                android:textColor="#000"
-                android:layout_marginLeft="323dp" />
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-30dp" />
 
+
+            <ImageButton
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="-770dp"
+                android:background="@null"
+                app:srcCompat="@drawable/ic_dateicon"
+                tools:ignore="VectorDrawableCompat" />
 
         </LinearLayout>
     </ScrollView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
