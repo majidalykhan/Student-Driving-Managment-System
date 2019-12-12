@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Expenses">
+
+    <ImageButton
+        android:id="@+id/newexpensefuelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104"
+        app:srcCompat="@drawable/ic_new_icon"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/newexpensefueltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Expense (Fuel)"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newexpensefuelbtn"
+        app:layout_constraintEnd_toEndOf="@+id/newexpensefuelbtn"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="@+id/newexpensefuelbtn"
+        app:layout_constraintTop_toTopOf="@+id/newexpensefuelbtn"
+        app:layout_constraintVertical_bias="0.464" />
+
+
+    <ImageButton
+        android:id="@+id/newexpenseotherbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.287"
+        app:srcCompat="@drawable/ic_new_icon"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/newexpensevehiclebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194"
+        app:srcCompat="@drawable/ic_new_icon"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/newexpensevehicletxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Expense (Vehicle)"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newexpensevehiclebtn"
+        app:layout_constraintEnd_toEndOf="@+id/newexpensevehiclebtn"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toStartOf="@+id/newexpensevehiclebtn"
+        app:layout_constraintTop_toTopOf="@+id/newexpensevehiclebtn"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <TextView
+        android:id="@+id/newexpenseothertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Expense (Other)"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/newexpenseotherbtn"
+        app:layout_constraintEnd_toEndOf="@+id/newexpenseotherbtn"
+        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintStart_toStartOf="@+id/newexpenseotherbtn"
+        app:layout_constraintTop_toTopOf="@+id/newexpenseotherbtn"
+        app:layout_constraintVertical_bias="0.428" />
+
+
+    <TableLayout
+        android:layout_width="398dp"
+        android:layout_height="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableRow
+            android:id="@+id/tablerow1"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:background="@android:color/holo_green_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.465">
+
+            <TextView
+                android:id="@+id/expdescription"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#dff6f0"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Descrip"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/expdate"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#dff6f0"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Date"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/exptype"
+                android:layout_weight="1"
+                android:background="#dff6f0"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Type"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/expamount"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#dff6f0"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Amount"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/expnotes"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#dff6f0"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="Notes"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
