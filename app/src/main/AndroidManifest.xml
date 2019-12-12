@@ -9,9 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Expenses"></activity>
-        <activity android:name=".calendar" />
-        <activity android:name=".Progress" />
+        <activity android:name=".editstudent"></activity>
+        <activity android:name=".student" />
+        <activity
+            android:name=".Expenses"
+            android:label="Expenses" />
+        <activity
+            android:name=".calendar"
+            android:label="Calendar" />
+        <activity
+            android:name=".Progress"
+            android:label="Progress" />
         <activity
             android:name=".History"
             android:label="History" />
