@@ -110,7 +110,7 @@
 
     <EditText
         android:id="@+id/name"
-        android:layout_width="182dp"
+        android:layout_width="142dp"
         android:layout_height="42dp"
         android:text="Shayan Naveed"
         android:textSize="18sp"
@@ -195,10 +195,10 @@
         android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.901"
+        app:layout_constraintVertical_bias="0.929"
         app:srcCompat="@drawable/ic_button"
         tools:ignore="VectorDrawableCompat" />
 
@@ -206,7 +206,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book Lesson"
+        android:text="Confirm Details"
         android:textColor="#FAF7F7"
         android:textColorHighlight="#FAF6F6"
         android:textColorLink="#FAF7F7"
@@ -217,31 +217,4 @@
         app:layout_constraintTop_toTopOf="@+id/booklessonbtn" />
 
 
-    <ImageButton
-        android:id="@+id/viewprogressbtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.971"
-        app:srcCompat="@drawable/ic_button"
-        tools:ignore="VectorDrawableCompat" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View Progress"
-        android:textColor="#FAF7F7"
-        android:textColorHighlight="#FAF6F6"
-        android:textColorLink="#FAF7F7"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/viewprogressbtn"
-        app:layout_constraintEnd_toEndOf="@+id/viewprogressbtn"
-        app:layout_constraintStart_toStartOf="@+id/viewprogressbtn"
-        app:layout_constraintTop_toTopOf="@+id/viewprogressbtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
