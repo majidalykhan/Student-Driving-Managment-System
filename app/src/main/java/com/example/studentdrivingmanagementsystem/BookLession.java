@@ -8,10 +8,11 @@ import android.view.View;
 import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class BookLession extends AppCompatActivity {
 
-    EditText timeSelect;
+    TextView time;
     ImageButton newAppoint;
     CalendarView calendar;
 
@@ -20,17 +21,10 @@ public class BookLession extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_lession);
 
-        timeSelect = findViewById(R.id.timeSelect);
+        time = findViewById(R.id.time);
         newAppoint = findViewById(R.id.confirmBookingBtn);
         calendar = findViewById(R.id.calendarView);
 
-
-        timeSelect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         newAppoint.setOnClickListener(new View.OnClickListener() {
             @Override
