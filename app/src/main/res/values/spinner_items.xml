@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="progress_array">
+        <item>COCKPIT DRILL</item>
+        <item>CONTROLS</item>
+        <item>MIRRORS
+</item>
+        <item>MOVING OFF AND STOPPING
+</item>
+        <item>GEARS
+</item>
+        <item>STREERING
+</item>
+        <item>CO-ORDINATION
+</item>
+        <item>UP HILL
+</item>
+        <item>DOWN HILL
+</item>
+        <item>HAZARD DRILL
+</item>
+        <item>JUNCTION - TURNING LEFT
+</item>
+        <item>JUNCTION - EMERGING LEFT
+</item>
+        <item>JUNCTION - TURNING RIGHT
+</item>
+        <item>JUNCTION - EMERGING RIGHT
+</item>
+        <item>CROSSROADS
+</item>
+        <item>EMERGENCY STOP
+</item>
+        <item>STRAIGHT LINE REVERSE
+</item>
+        <item>FRONT BAY PARKING
+</item>
+        <item>REVERSE BAY PARKING
+</item>
+        <item>PARALLEL REVERSE PARKING
+</item>
+        <item>PULL OUT RIGHT AND REVERSE
+</item>
+        <item>PEDESTRIAN CROSSINGS
+</item>
+        <item>TRAFFIC LIGHTS
+</item>
+        <item>BASIC ROUNDABOUT
+</item>
+        <item>MINI ROUNDABOUT
+</item>
+        <item>MULTI LANE ROUNDABOUT
+</item>
+        <item>EMERGING BUSIER JUNCTIONS
+</item>
+        <item>HP AND DEFENSIVE DRIVE
+</item>
+        <item>DUAL CARRIAGEWAYS
+</item>
+        <item>TOWN AND CITY CENTRE DRIVE
+</item>
+        <item>TEST CENTRE
+</item>
+
+    </string-array>
+</resources>
