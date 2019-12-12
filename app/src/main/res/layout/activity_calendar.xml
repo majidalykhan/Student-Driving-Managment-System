@@ -62,7 +62,7 @@
         app:layout_constraintVertical_bias="0.782" />
 
     <ImageButton
-        android:id="@+id/calendarconfirmappbtn"
+        android:id="@+id/confirmAppointBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@null"
@@ -96,9 +96,9 @@
         android:textColor="#F7F3F3"
         android:textColorLink="#F7F3F3"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/calendarconfirmappbtn"
-        app:layout_constraintEnd_toEndOf="@+id/calendarconfirmappbtn"
-        app:layout_constraintStart_toStartOf="@+id/calendarconfirmappbtn"
-        app:layout_constraintTop_toTopOf="@+id/calendarconfirmappbtn" />
+        app:layout_constraintBottom_toBottomOf="@+id/confirmAppointBtn"
+        app:layout_constraintEnd_toEndOf="@+id/confirmAppointBtn"
+        app:layout_constraintStart_toStartOf="@+id/confirmAppointBtn"
+        app:layout_constraintTop_toTopOf="@+id/confirmAppointBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
