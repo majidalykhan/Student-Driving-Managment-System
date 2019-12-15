@@ -336,6 +336,15 @@
                 app:srcCompat="@drawable/ic_dateicon"
                 tools:ignore="VectorDrawableCompat" />
 
+            <EditText
+                android:id="@+id/editDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:background="@null"
+                android:layout_marginLeft="320dp"
+                ></EditText>
+
         </LinearLayout>
     </ScrollView>
 
