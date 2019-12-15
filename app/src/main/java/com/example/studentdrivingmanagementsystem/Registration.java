@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -132,7 +133,7 @@ public class Registration extends AppCompatActivity {
         submitRegBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                register();
+                SaveData();
             }
         });
 
@@ -178,6 +179,43 @@ public class Registration extends AppCompatActivity {
             }
         })
         .addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(Registration.this,"Register Failed",Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+    }
+
+
+    private void SaveData(){
+        String no = studentNo.getText().toString().trim();
+        String Name = name.getText().toString().trim();
+        String Address = address.getText().toString().trim();
+        String postal = postalCode.getText().toString().trim();
+        String Email = email.getText().toString().trim();
+        String mobile = mobileNo.getText().toString().trim();
+        String licenseNo = drivingLicenseNo.getText().toString().trim();
+        String medical = medicalCondition.getText().toString().trim();
+        String referenc = reference.getText().toString().trim();
+        String Note = note.getText().toString().trim();
+        String date = editdate.getText().toString().trim();
+
+
+        CollectionReference studentsdb = db.collection("students");
+
+        studentData student = new studentData(
+                no, Name, Address, postal, Email, mobile, licenseNo, medical, referenc, Note, date
+        ){};
+
+        studentsdb.add(student).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+            @Override
+            public void onSuccess(DocumentReference documentReference) {
+                Toast.makeText(Registration.this,"Register Successful",Toast.LENGTH_LONG).show();
+
+            }
+        }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(Registration.this,"Register Failed",Toast.LENGTH_LONG).show();
