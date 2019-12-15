@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -132,52 +134,39 @@ public class Registration extends AppCompatActivity {
         submitRegBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                register();
+                SaveData();
             }
         });
 
-
     }
 
+    private void SaveData(){
+        String no = studentNo.getText().toString().trim();
+        String Name = name.getText().toString().trim();
+        String Address = address.getText().toString().trim();
+        String postal = postalCode.getText().toString().trim();
+        String Email = email.getText().toString().trim();
+        String mobile = mobileNo.getText().toString().trim();
+        String licenseNo = drivingLicenseNo.getText().toString().trim();
+        String medical = medicalCondition.getText().toString().trim();
+        String referenc = reference.getText().toString().trim();
+        String Note = note.getText().toString().trim();
+        String date = editdate.getText().toString().trim();
 
-    private void register(){
 
-        String studentNum = studentNo.getText().toString();
-        String studentName = name.getText().toString();
-        String stuAddress = address.getText().toString();
-        String stuPostalCode = postalCode.getText().toString();
-        String stuEmail = email.getText().toString();
-        String stuMobile = mobileNo.getText().toString();
-        String stuLicenseNo = drivingLicenseNo.getText().toString();
-        String stuMedical = medicalCondition.getText().toString();
-        String stuReference = reference.getText().toString();
-        String stuNote = note.getText().toString();
-        String Date = editdate.getText().toString();
+        CollectionReference studentsdb = db.collection("students");
 
-        Map<String, Object> student = new HashMap<>();
+        studentData student = new studentData(
+                no, Name, Address, postal, Email, mobile, licenseNo, medical, referenc, Note, date
+        ){};
 
-        student.put(KEY_STUDENTNO, studentNum);
-        student.put(KEY_NAME, studentName);
-        student.put(KEY_ADDRESS, stuAddress);
-        student.put(KEY_POSTALCODE, stuPostalCode);
-        student.put(KEY_EMAIL, stuEmail);
-        student.put(KEY_MOBILENO, stuMobile);
-        student.put(KEY_drivingLicenseNo, stuLicenseNo);
-        student.put(KEY_medicalCondition, stuMedical);
-        student.put(KEY_reference, stuReference);
-        student.put(KEY_note, stuNote);
-        student.put(KEY_date, Date);
-        
-
-       db.collection("students").document().set(student)
-        .addOnSuccessListener(new OnSuccessListener<Void>() {
+        studentsdb.add(student).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
             @Override
-            public void onSuccess(Void aVoid) {
+            public void onSuccess(DocumentReference documentReference) {
                 Toast.makeText(Registration.this,"Register Successful",Toast.LENGTH_LONG).show();
 
             }
-        })
-        .addOnFailureListener(new OnFailureListener() {
+        }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(Registration.this,"Register Failed",Toast.LENGTH_LONG).show();
