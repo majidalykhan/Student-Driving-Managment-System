@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "505203778945",
+    "firebase_url": "https://instructor-hub-33af8.firebaseio.com",
+    "project_id": "instructor-hub-33af8",
+    "storage_bucket": "instructor-hub-33af8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505203778945:android:16a9b7e42a65f6c8fdb480",
+        "android_client_info": {
+          "package_name": "com.example.studentdrivingmanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505203778945-fed6gj7ikr3nfk597dihjq1s0a0a5sma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentdrivingmanagementsystem",
+            "certificate_hash": "0307517990b0b9a3d8a749b76b06fcdb9bf11187"
+          }
+        },
+        {
+          "client_id": "505203778945-6gnmm27gcvpjdf0v7b8m59kagcd2jp8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW81Pk_WIPdEGi7eK7lZfZLgchh0siOHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505203778945-6gnmm27gcvpjdf0v7b8m59kagcd2jp8p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
