@@ -83,6 +83,7 @@
             android:layout_height="51dp"
             android:layout_marginLeft="300dp"
             android:layout_marginTop="-65dp"
+            android:onClick="onDialButton"
             android:background="@null"
             app:srcCompat="@drawable/ic_call"
             tools:ignore="VectorDrawableCompat" />
