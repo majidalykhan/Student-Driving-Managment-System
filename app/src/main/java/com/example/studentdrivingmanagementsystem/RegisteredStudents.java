@@ -30,13 +30,11 @@ import java.util.List;
 
 public class RegisteredStudents extends AppCompatActivity {
 
-    private static final String TAG = "FireLog";
-    TextView nam, mob;
-    private static final String KEY_NAME = "name";
-    private static final String KEY_MOBILE = "mobile";
 
-    FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
-    CollectionReference std = firebaseFirestore.collection("students");
+    FirebaseFirestore db;
+    RecyclerView recyclerView;
+    List<studentData> students;
+    StudentAdapter adapter;
 
 
     @Override
@@ -44,39 +42,43 @@ public class RegisteredStudents extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registered_students);
 
-        firebaseFirestore = FirebaseFirestore.getInstance();
-        nam = findViewById(R.id.names);
 
-        Load();
+
+        recyclerView = findViewById(R.id.recycler);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        students = new ArrayList<>();
+        adapter = new StudentAdapter(this,students);
+
+        recyclerView.setAdapter(adapter);
+
+        db = FirebaseFirestore.getInstance();
+
+
+        Read();
 
     }
 
-    private void Load(){
-       std.get()
-               .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                   @Override
-                   public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                       String data = "";
-                       String line = "-----------------";
 
+    private void Read(){
 
-                       for(QueryDocumentSnapshot documentSnapshot : queryDocumentSnapshots){
-                           studentData studentData = documentSnapshot.toObject(com.example.studentdrivingmanagementsystem.studentData.class);
-                           String names = studentData.getName();
-                           String num = studentData.getMobile();
+        db.collection("students").get()
+                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                    @Override
+                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                        if(!queryDocumentSnapshots.isEmpty()){
+                            List<DocumentSnapshot> list = queryDocumentSnapshots.getDocuments();
 
-                           data += "Name : " + names + "\n" + "Mobile : " + num + "\n"
-                                   + "--------------------------------------------------" +
-                                   "\n";
+                            for (DocumentSnapshot d: list){
+                                studentData s = d.toObject(studentData.class);
+                                students.add(s);
+                            }
+                            adapter.notifyDataSetChanged();
+                        }
+                    }
+                });
 
-                           //data2 += "Mobile : " + num + "\n";
-
-
-                       }
-                       nam.setText(data);
-
-                   }
-               });
     }
 
 }
