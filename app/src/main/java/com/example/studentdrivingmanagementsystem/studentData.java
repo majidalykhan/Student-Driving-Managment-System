@@ -67,4 +67,48 @@ public class studentData {
     public String getDate() {
         return date;
     }
+
+    public void setNo(String no) {
+        this.no = no;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setPostal(String postal) {
+        this.postal = postal;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public void setLicenseNo(String licenseNo) {
+        this.licenseNo = licenseNo;
+    }
+
+    public void setMedical(String medical) {
+        this.medical = medical;
+    }
+
+    public void setReference(String reference) {
+        this.reference = reference;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 }

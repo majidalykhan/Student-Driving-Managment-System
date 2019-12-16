@@ -135,6 +135,9 @@ public class Registration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SaveData();
+
+                Intent a = new Intent(Registration.this,RegisteredStudents.class);
+                startActivity(a);
             }
         });
 
