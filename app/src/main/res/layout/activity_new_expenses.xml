@@ -7,29 +7,20 @@
     android:background="#fff"
     tools:context=".NewExpenses">
 
-    <EditText
+    <TextView
         android:id="@+id/descText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="256dp"
         android:background="@null"
-        android:hint="Description"
+        android:hint="Expense Type"
         android:textColor="#000"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/paymentMode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spinnerexp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.101" />
-
-    <ImageView
-        android:id="@+id/line1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/line2"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.138"
-        app:srcCompat="@drawable/ic_edittextline"
-        tools:ignore="VectorDrawableCompat" />
+        app:layout_constraintVertical_bias="0.056" />
 
     <EditText
         android:id="@+id/paymentMode"
@@ -145,8 +136,8 @@
         app:srcCompat="@drawable/ic_dateicon"
         tools:ignore="VectorDrawableCompat" />
 
-    <TextView
-        android:id="@+id/textView7"
+    <EditText
+        android:id="@+id/editdateexpense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Date"
@@ -183,6 +174,15 @@
         app:layout_constraintStart_toStartOf="@+id/submitBtn"
         app:layout_constraintTop_toTopOf="@+id/submitBtn"
         app:layout_constraintVertical_bias="0.4" />
+
+    <Spinner
+        android:id="@+id/spinnerexp"
+        android:layout_width="213dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="56dp"
+        android:entries="@array/expensetype"
+        app:layout_constraintBottom_toTopOf="@+id/line2"
+        app:layout_constraintStart_toStartOf="@+id/paymentMode" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
