@@ -32,7 +32,7 @@ import io.opencensus.common.ServerStatsFieldEnums;
 public class NewExpenses extends AppCompatActivity {
 
     ImageButton submitBtn, dateBtn;
-    EditText paymentMode, totalCost, litre, notes, editdateexpense;
+    EditText description, paymentMode, totalCost, litre, notes, editdateexpense;
     Spinner spinnerexp;
 
 
@@ -53,6 +53,7 @@ public class NewExpenses extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         submitBtn = findViewById(R.id.submitBtn);
+        description = findViewById(R.id.description);
         spinnerexp = findViewById(R.id.spinnerexp);
         paymentMode = findViewById(R.id.paymentMode);
         totalCost = findViewById(R.id.totalCost);
@@ -120,9 +121,10 @@ public class NewExpenses extends AppCompatActivity {
         String Litre = litre.getText().toString().trim();
         String Notes = notes.getText().toString().trim();
         String dateBtn = editdateexpense.getText().toString().trim();
+        String descr = description.getText().toString().trim();
 
         CollectionReference expensedb = db.collection("expenses");
-        ExpenseData expense = new ExpenseData(expensetype, paymentmode, totalcost, Litre, Notes, dateBtn
+        ExpenseData expense = new ExpenseData(expensetype, paymentmode, totalcost, Litre, Notes, dateBtn, descr
         ) {};
 
         expensedb.add(expense).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
