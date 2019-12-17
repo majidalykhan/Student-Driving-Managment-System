@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "505203778945-89k63bfass1j9v1v2tjliv9qkr4au4r1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.studentdrivingmanagementsystem",
+            "certificate_hash": "044a35f2465fa0b90cca5946d760faacb7a17770"
+          }
+        },
+        {
           "client_id": "505203778945-fed6gj7ikr3nfk597dihjq1s0a0a5sma.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
