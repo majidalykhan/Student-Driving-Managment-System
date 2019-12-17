@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Student Driving Management System</string>
     <array name="expensetype">
-        <item>New Expense (Fuel)</item>
-        <item>New Expense (Vehicle)</item>
-        <item>New Expense (Other)</item>
+        <item>Fuel</item>
+        <item>Vehicle</item>
+        <item>Other</item>
     </array>
 </resources>

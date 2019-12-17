@@ -1,12 +1,12 @@
 package com.example.studentdrivingmanagementsystem;
 
 public class ExpenseData {
-    private String id,expensetype, paymentmode, totalcost, Litre, Notes,dateBtn;
+    private String id,expensetype, paymentmode, totalcost, Litre, Notes,dateBtn, descr;
 
     ExpenseData(){
 
     }
-    public ExpenseData( String expensetype,String  paymentmode,String  totalcost,String  Litre,String  Notes,String dateBtn){
+    public ExpenseData( String expensetype,String  paymentmode,String  totalcost,String  Litre,String  Notes,String dateBtn, String descr){
        // this.id=id;
         this.expensetype=expensetype;
         this.paymentmode=paymentmode;
@@ -14,6 +14,7 @@ public class ExpenseData {
         this.Litre=Litre;
         this.Notes=Notes;
         this.dateBtn = dateBtn;
+        this.descr = descr;
     }
 
    /*
@@ -33,23 +34,31 @@ public class ExpenseData {
     public String getTotalcost(){return totalcost;}
     public String getLitre(){return Litre;}
     public String getNotes(){return Notes;}
+    public String getDescr() {
+        return descr;
+    }
 
-//    public void setdateBtn(String dateBtn) {
-//        this.dateBtn = dateBtn;
-//    }
-//    public void setExpensetype(String expensetype) {
-//        this.expensetype = expensetype;
-//    }
-//    public void setPaymentmode(String paymentmode) {
-//        this.paymentmode = paymentmode;
-//    }
-//    public void setTotalcost(String totalcost) {
-//        this.totalcost = totalcost;
-//    }
-//    public void setLitre(String Litre) {
-//        this.Litre = Litre;
-//    }
-//    public void setNotes(String Notes) {
-//        this.Notes = Notes;
-//    }
+
+    public void setDescr(String descr) {
+        this.descr = descr;
+    }
+
+    public void setdateBtn(String dateBtn) {
+       this.dateBtn = dateBtn;
+    }
+    public void setExpensetype(String expensetype) {
+        this.expensetype = expensetype;
+    }
+    public void setPaymentmode(String paymentmode) {
+        this.paymentmode = paymentmode;
+    }
+    public void setTotalcost(String totalcost) {
+        this.totalcost = totalcost;
+    }
+    public void setLitre(String Litre) {
+        this.Litre = Litre;
+    }
+    public void setNotes(String Notes) {
+        this.Notes = Notes;
+    }
 }
