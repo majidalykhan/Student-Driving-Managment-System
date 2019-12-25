@@ -7,16 +7,32 @@
     tools:context=".calendar">
 
 
-    <CalendarView
-        android:id="@+id/calendarview"
+    <ImageButton
+        android:id="@+id/dateBtnapp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.884"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.399" />
+        app:layout_constraintVertical_bias="0.103"
+        app:srcCompat="@drawable/ic_dateicon"
+        tools:ignore="VectorDrawableCompat" />
+
+    <EditText
+        android:id="@+id/editdateexpenseapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="448dp"
+        android:text="Date"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/dateBtn"
+        app:layout_constraintTop_toBottomOf="@+id/dateBtn" />
 
     <ImageButton
         android:id="@+id/calendarnewbtn"
@@ -28,10 +44,9 @@
         app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125"
+        app:layout_constraintVertical_bias="0.029"
         app:srcCompat="@drawable/ic_new_icon"
         tools:ignore="VectorDrawableCompat" />
-
 
     <TextView
         android:id="@+id/calendarnewbtnselectTimeText"
@@ -45,7 +60,7 @@
         app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715" />
+        app:layout_constraintVertical_bias="0.78" />
 
     <EditText
         android:id="@+id/calendartimeSelect"
@@ -59,7 +74,7 @@
         app:layout_constraintHorizontal_bias="0.297"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.782" />
+        app:layout_constraintVertical_bias="0.854" />
 
     <ImageButton
         android:id="@+id/confirmAppointBtn"

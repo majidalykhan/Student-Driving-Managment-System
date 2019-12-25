@@ -10,8 +10,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="409dp"
-        android:layout_height="601dp"
+        android:layout_width="421dp"
+        android:layout_height="918dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -203,7 +203,6 @@
                 android:textSize="18dp" />
 
 
-
             <CheckBox
                 android:id="@+id/previousDrivingChkbox"
                 android:layout_width="wrap_content"
@@ -309,9 +308,9 @@
                 android:id="@+id/submitRegBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@null"
                 android:layout_marginLeft="100dp"
                 android:layout_marginTop="30dp"
+                android:background="@null"
                 app:srcCompat="@drawable/ic_button"
                 tools:ignore="VectorDrawableCompat" />
 
@@ -319,12 +318,19 @@
                 android:id="@+id/changeDetailsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-30dp"
                 android:text="Submit"
                 android:textColor="#ffffff"
-                android:textSize="18dp"
-                android:layout_marginLeft="170dp"
-                android:layout_marginTop="-30dp" />
+                android:textSize="18dp" />
 
+            <Button
+                android:id="@+id/signaturee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="-160dp"
+                android:text="@string/hint_sign" />
 
             <ImageButton
                 android:id="@+id/date"
@@ -340,10 +346,9 @@
                 android:id="@+id/editDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Date"
-                android:background="@null"
                 android:layout_marginLeft="320dp"
-                ></EditText>
+                android:background="@null"
+                android:hint="Date"></EditText>
 
         </LinearLayout>
     </ScrollView>
