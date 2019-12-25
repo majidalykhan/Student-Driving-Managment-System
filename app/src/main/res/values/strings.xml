@@ -1,8 +1,16 @@
 <resources>
     <string name="app_name">Student Driving Management System</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_sign">Get Signature</string>
+    <string name="dialog_title">SIGN HERE</string>
+    <string name="hint_cancel">Cancel</string>
+    <string name="hint_clear">Clear</string>
+    <string name="hint_save">Save</string>
     <array name="expensetype">
         <item>Fuel</item>
         <item>Vehicle</item>
         <item>Other</item>
     </array>
+
 </resources>
