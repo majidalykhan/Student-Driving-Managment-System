@@ -280,14 +280,7 @@ public class Registration extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration);
+        
 
         // Setting ToolBar as ActionBar
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -321,6 +314,7 @@ public class Registration extends AppCompatActivity {
 
     private void setSupportActionBar(Toolbar toolbar) {
     }
+
 
     // Function for Digital Signature
     public void dialog_action() {
